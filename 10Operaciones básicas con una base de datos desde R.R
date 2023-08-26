@@ -1,0 +1,6 @@
+library(RMySQL)
+library(DBI)
+driver=dbDriver("MySQL")
+con=dbConnect(driver.user="root", password="litoplas19",db="platilla_docente")
+dbReadTable(conn=con,name="investigadores")
+dbDisconnect(con)
